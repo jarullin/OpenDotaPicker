@@ -1,29 +1,22 @@
-import asyncio
-import copy
-import email.charset
-import json
 import os
 import time
-import datetime
-import tkinter.ttk
 import threading
+from datetime import date, timedelta, datetime, timezone
+
 from tkinter import *
 from tkinter import ttk, font
-
-import Loaders
-import requests
 from PIL import Image, ImageTk, ImageDraw, ImageFont
-from datetime import date, timedelta
-import cv2
-import numpy as np
 from pathlib import Path
-import async_tkinter_loop as atl
+
 import ViewModel as ViewModel
+import Loaders
 from Model import Hero, Winrate
 
 # Globals
 bgColor = "#282825"  # Stores background color
 HeroList = []
+
+
 class App:
     def __init__(self, master: Tk) -> None:
         self.master = master
@@ -33,26 +26,27 @@ class App:
         self.defaultFont.configure(family="Helvetica",
                                    size=20,
                                    weight=font.NORMAL)
-        style = tkinter.ttk.Style()
+        style = ttk.Style()
         style.theme_use('clam')
         self.factorVar = IntVar()
         self.factorVar.set(1)
 
+
 def initialize():
-    global HeroLists
+    global HeroList
     print("Loading hero data from file")
-    HeroList = Loaders.load_hero_data("herotable.json")
+    HeroList = Loaders.load_hero_data("data/herotable.json")
     print("Loading hero data from file complete")
     # Loading hero pictures
     print("Loading hero pictures")
     HeroList[:] = Loaders.getHeroPictures(HeroList)
     print("Pictures are loaded")
     # Check if the file up to date
-    HeroListOutdated = datetime.datetime.fromtimestamp(
-            os.path.getmtime('../herotable.json')) < datetime.datetime.today() - datetime.timedelta(days=7)
-    MatchupsOutdated = not Path('../heromatchups.json').is_file() or datetime.datetime.fromtimestamp(
-            os.path.getmtime('../heromatchups.json')) < datetime.datetime.today() - datetime.timedelta(days=7)
-    print("Main thread: "+str(threading.get_ident()))
+    HeroListOutdated = datetime.fromtimestamp(
+        os.path.getmtime('data/herotable.json')) < datetime.today() - timedelta(days=7)
+    MatchupsOutdated = not Path('data/heromatchups.json').is_file() or datetime.fromtimestamp(
+        os.path.getmtime('data/heromatchups.json')) < datetime.today() - timedelta(days=7)
+    print("Main thread: " + str(threading.get_ident()))
     if HeroListOutdated:
         print("Roles are outdated, starting update")
         role_upd_thread = threading.Thread(target=Loaders.update_roles, args=(HeroList,), daemon=True)
@@ -65,8 +59,6 @@ def initialize():
         loading_thread = threading.Thread(target=Loaders.update_matchup_data, args=(HeroList,), daemon=True)
         loading_thread.start()
     return HeroList
-
-
 
 
 # Entry point
@@ -100,12 +92,12 @@ statusBarFrame.grid(row=3, sticky=W, padx=(30, 0), pady=(5, 0))
 # 5. Footer frame
 root.rowconfigure(1, weight=1)
 footerFrame = Frame(root)
-footerFrame.grid(row=1,sticky=SE)
-progressbar = tkinter.ttk.Progressbar(footerFrame, orient='horizontal', length=250, mode='determinate')
+footerFrame.grid(row=1, sticky=SE)
+progressbar = ttk.Progressbar(footerFrame, orient='horizontal', length=250, mode='determinate')
 updLabel = Label(footerFrame, text='Database is up to date')
-updLabel.grid(column=0,row=0,sticky=E)
+updLabel.grid(column=0, row=0, sticky=E)
 progressbar.grid(column=1, row=0, sticky=E)
-progressbar['value']=Loaders.Status
+progressbar['value'] = Loaders.Status
 # Pick Frame children
 # 1.1 team pick
 teamPickGridFrame = Frame(pickFrame, height=88, width=535, bg=bgColor, highlightthickness=2,
@@ -114,7 +106,7 @@ teamPickGridFrame.grid(row=0, column=0, sticky=W, padx=(20, 20))
 teamPickGridFrame.grid_propagate(0)
 teamPickLabel = Label(teamPickGridFrame, text="Your team pick", font=("Verdana", 10))
 teamPickLabel.grid(row=0, column=0, columnspan=5)
-teamPickStatsLabel = Label(teamPickGridFrame, text='', font=("Verdana",8))
+teamPickStatsLabel = Label(teamPickGridFrame, text='', font=("Verdana", 8))
 teamPickStatsLabel.grid(row=0, column=1, columnspan=4, sticky=W)
 
 # 1.2 Banned heroes
@@ -313,6 +305,7 @@ def onPickedRightClick(hero: Hero, widget):
             redrawGrid('enemy')
     recalculatePicks()
 
+
 # Label for searching on grid
 textLabel = Label(suggestionsFrame, text='')
 textLabel.grid(column=1, row=6)
@@ -332,14 +325,14 @@ root.bind('<KeyPress>', onKeyDown)
 
 class TimedValue:
     def __init__(self):
-        self._started_at = datetime.datetime.now(datetime.UTC)
+        self._started_at = datetime.now(timezone.utc)
 
     def __call__(self):
-        time_passed = datetime.datetime.utcnow() - self._started_at
+        time_passed = datetime.now(timezone.utc) - self._started_at
         return time_passed.total_seconds() > 1
 
     def update(self):
-        self._started_at = datetime.datetime.utcnow()
+        self._started_at = datetime.now(timezone.utc)
 
 
 lastUpd = TimedValue()
@@ -471,7 +464,9 @@ def recalculatePicks():
         allyDpm += allyHero.dpm
         allyTdmg += allyHero.tdmg
     if len(teamPick) > 0:
-        teamPickStatsLabel.config(text="gpm::{:.2f}, dpm::{:.2f}, towerdmg::{:.2f}".format(allyGreed / len(teamPick), allyDpm / len(teamPick), allyTdmg / len(teamPick)))
+        teamPickStatsLabel.config(
+            text="gpm::{:.2f}, dpm::{:.2f}, towerdmg::{:.2f}".format(allyGreed / len(teamPick), allyDpm / len(teamPick),
+                                                                     allyTdmg / len(teamPick)))
     # Get a suggested hero from pool
     for suggestion in pool:
         # Get an enemy hero
@@ -485,11 +480,12 @@ def recalculatePicks():
                     # max = maximal games played with suggested hero (best data)
                     # min = minimal games played with suggested hero (worst data)
                     # matchup_factor = 1 - (max games - games played)/(max - min)
-                    matchup_factor = 0 - factorBool.get() * (enemyHero.maxMatchupN - matchup.n) / (enemyHero.maxMatchupN - enemyHero.minMatchupN) + 1
+                    matchup_factor = 0 - factorBool.get() * (enemyHero.maxMatchupN - matchup.n) / (
+                            enemyHero.maxMatchupN - enemyHero.minMatchupN) + 1
                     # Matchup gets difference between winrate in matchup and 50% winrate, with consideration
                     # of how data is trustworthy
                     enemyGreedAvg = enemyGreed / len(enemyPick)
-                    allyGreedAvgSugg = (allyGreed + suggestion['hero'].gpm)/(len(teamPick) + 1)
+                    allyGreedAvgSugg = (allyGreed + suggestion['hero'].gpm) / (len(teamPick) + 1)
                     greedFactor = 1
                     if greedBool.get() and enemyGreedAvg < allyGreedAvgSugg:
                         greedFactor += (enemyGreedAvg - allyGreedAvgSugg) / 300
@@ -630,8 +626,8 @@ factorCheckbutton = Checkbutton(statusBarFrame, text="Use the number of games in
                                 command=recalculatePicks)
 factorCheckbutton.grid(row=0, column=0, sticky=W)
 greedCheckbutton = Checkbutton(statusBarFrame, text="Use ally greed as a factor", var=greedBool,
-                                font=("Verdana", 10), activeforeground='white', selectcolor="black",
-                                command=recalculatePicks)
+                               font=("Verdana", 10), activeforeground='white', selectcolor="black",
+                               command=recalculatePicks)
 greedCheckbutton.grid(row=1, column=0, sticky=W)
 
 
