@@ -5,9 +5,16 @@
     "localized_name": "Anti-Mage",
     "name": "npc_dota_hero_antimage",
     "primary_attr": "agi",
+    "aliases": [
+        "am",
+        "magina"
+    ],
     "roles": [
         1
-    ]
+    ],
+    "gpm": 701,
+    "dpm": 587.9053084648493,
+    "tdmg": 5089
 },
 {
     "id": 2,
@@ -15,10 +22,14 @@
     "localized_name": "Axe",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
         3
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 556,
+    "dpm": 748.9435336976321,
+    "tdmg": 766
 },
 {
     "id": 3,
@@ -26,13 +37,15 @@
     "localized_name": "Bane",
     "primary_attr": "all",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
-        2,
-        3,
         4,
         5
     ],
-    "legs": 4
+    "legs": 4,
+    "gpm": 379,
+    "dpm": 433.8984473352917,
+    "tdmg": 450
 },
 {
     "id": 4,
@@ -40,11 +53,16 @@
     "localized_name": "Bloodseeker",
     "primary_attr": "agi",
     "attack_type": "Melee",
-    "roles": [
-        1,
-        3
+    "aliases": [
+        "bs"
     ],
-    "legs": 2
+    "roles": [
+        1
+    ],
+    "legs": 2,
+    "gpm": 607,
+    "dpm": 723.3873343151694,
+    "tdmg": 1731
 },
 {
     "id": 5,
@@ -52,10 +70,16 @@
     "localized_name": "Crystal Maiden",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [
+        "cm"
+    ],
     "roles": [
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 396,
+    "dpm": 426.69503546099287,
+    "tdmg": 363
 },
 {
     "id": 6,
@@ -63,10 +87,16 @@
     "localized_name": "Drow Ranger",
     "primary_attr": "agi",
     "attack_type": "Ranged",
+    "aliases": [
+        "traxex"
+    ],
     "roles": [
         1
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 647,
+    "dpm": 677.6559546313799,
+    "tdmg": 3458
 },
 {
     "id": 7,
@@ -74,12 +104,15 @@
     "localized_name": "Earthshaker",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
         2,
-        3,
         4
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 498,
+    "dpm": 641.6720257234726,
+    "tdmg": 833
 },
 {
     "id": 8,
@@ -87,10 +120,16 @@
     "localized_name": "Juggernaut",
     "primary_attr": "agi",
     "attack_type": "Melee",
+    "aliases": [
+        "yurnero"
+    ],
     "roles": [
         1
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 664,
+    "dpm": 673.2821497120921,
+    "tdmg": 2829
 },
 {
     "id": 9,
@@ -98,12 +137,17 @@
     "localized_name": "Mirana",
     "primary_attr": "all",
     "attack_type": "Ranged",
+    "aliases": [
+        "potm"
+    ],
     "roles": [
-        3,
         4,
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 427,
+    "dpm": 432.3331709693132,
+    "tdmg": 825
 },
 {
     "id": 10,
@@ -111,10 +155,14 @@
     "localized_name": "Morphling",
     "primary_attr": "agi",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
         1
     ],
-    "legs": 0
+    "legs": 0,
+    "gpm": 655,
+    "dpm": 676.7878787878788,
+    "tdmg": 4666
 },
 {
     "id": 11,
@@ -122,11 +170,18 @@
     "localized_name": "Shadow Fiend",
     "primary_attr": "agi",
     "attack_type": "Ranged",
+    "aliases": [
+        "sf",
+        "nevermore"
+    ],
     "roles": [
         1,
         2
     ],
-    "legs": 0
+    "legs": 0,
+    "gpm": 665,
+    "dpm": 795.962441314554,
+    "tdmg": 4100
 },
 {
     "id": 12,
@@ -134,10 +189,16 @@
     "localized_name": "Phantom Lancer",
     "primary_attr": "agi",
     "attack_type": "Melee",
+    "aliases": [
+        "pl"
+    ],
     "roles": [
         1
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 640,
+    "dpm": 748.3654652137468,
+    "tdmg": 4311
 },
 {
     "id": 13,
@@ -145,10 +206,14 @@
     "localized_name": "Puck",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
         2
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 587,
+    "dpm": 752.3487544483986,
+    "tdmg": 1638
 },
 {
     "id": 14,
@@ -156,14 +221,15 @@
     "localized_name": "Pudge",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
-        1,
-        2,
-        3,
         4,
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 491,
+    "dpm": 540,
+    "tdmg": 327
 },
 {
     "id": 15,
@@ -171,12 +237,15 @@
     "localized_name": "Razor",
     "primary_attr": "agi",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
         1,
-        2,
         3
     ],
-    "legs": 0
+    "legs": 0,
+    "gpm": 582,
+    "dpm": 807.8935698447893,
+    "tdmg": 2210
 },
 {
     "id": 16,
@@ -184,10 +253,16 @@
     "localized_name": "Sand King",
     "primary_attr": "all",
     "attack_type": "Melee",
+    "aliases": [
+        "sk"
+    ],
     "roles": [
         3
     ],
-    "legs": 6
+    "legs": 6,
+    "gpm": 557,
+    "dpm": 743.0639097744361,
+    "tdmg": 718
 },
 {
     "id": 17,
@@ -195,10 +270,16 @@
     "localized_name": "Storm Spirit",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [
+        "raijun"
+    ],
     "roles": [
         2
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 585,
+    "dpm": 667.7344654573524,
+    "tdmg": 1181
 },
 {
     "id": 18,
@@ -206,10 +287,14 @@
     "localized_name": "Sven",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
         1
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 640,
+    "dpm": 629.2462311557789,
+    "tdmg": 2711
 },
 {
     "id": 19,
@@ -217,11 +302,15 @@
     "localized_name": "Tiny",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
         2,
         4
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 510,
+    "dpm": 560.6365503080082,
+    "tdmg": 1221
 },
 {
     "id": 20,
@@ -229,12 +318,15 @@
     "localized_name": "Vengeful Spirit",
     "primary_attr": "all",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
-        3,
         4,
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 390,
+    "dpm": 368.78688524590166,
+    "tdmg": 541
 },
 {
     "id": 21,
@@ -242,13 +334,17 @@
     "localized_name": "Windranger",
     "primary_attr": "all",
     "attack_type": "Ranged",
-    "roles": [
-        1,
-        2,
-        3,
-        4
+    "aliases": [
+        "wr"
     ],
-    "legs": 2
+    "roles": [
+        2,
+        3
+    ],
+    "legs": 2,
+    "gpm": 549,
+    "dpm": 581.9489120151371,
+    "tdmg": 1626
 },
 {
     "id": 22,
@@ -256,11 +352,14 @@
     "localized_name": "Zeus",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
-        2,
-        4
+        2
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 559,
+    "dpm": 1034.9576988155668,
+    "tdmg": 437
 },
 {
     "id": 23,
@@ -268,11 +367,15 @@
     "localized_name": "Kunkka",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
         2,
         3
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 556,
+    "dpm": 682.0242024202421,
+    "tdmg": 1319
 },
 {
     "id": 25,
@@ -280,11 +383,14 @@
     "localized_name": "Lina",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
-        2,
-        4
+        2
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 601,
+    "dpm": 753.2608695652174,
+    "tdmg": 2192
 },
 {
     "id": 26,
@@ -292,11 +398,15 @@
     "localized_name": "Lion",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
         4,
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 376,
+    "dpm": 349.84379980873445,
+    "tdmg": 229
 },
 {
     "id": 27,
@@ -304,11 +414,18 @@
     "localized_name": "Shadow Shaman",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [
+        "ss",
+        "rasta"
+    ],
     "roles": [
         4,
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 425,
+    "dpm": 437.58072289156627,
+    "tdmg": 2519
 },
 {
     "id": 28,
@@ -316,10 +433,14 @@
     "localized_name": "Slardar",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
         3
     ],
-    "legs": 0
+    "legs": 0,
+    "gpm": 574,
+    "dpm": 605.5184851217314,
+    "tdmg": 2098
 },
 {
     "id": 29,
@@ -327,10 +448,14 @@
     "localized_name": "Tidehunter",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
         3
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 515,
+    "dpm": 474.2654181465935,
+    "tdmg": 1054
 },
 {
     "id": 30,
@@ -338,12 +463,16 @@
     "localized_name": "Witch Doctor",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [
+        "wd"
+    ],
     "roles": [
-        3,
-        4,
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 442,
+    "dpm": 671.9597615499255,
+    "tdmg": 385
 },
 {
     "id": 31,
@@ -351,10 +480,14 @@
     "localized_name": "Lich",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 411,
+    "dpm": 541.7336977743068,
+    "tdmg": 324
 },
 {
     "id": 32,
@@ -362,12 +495,17 @@
     "localized_name": "Riki",
     "primary_attr": "agi",
     "attack_type": "Melee",
+    "aliases": [
+        "rikimaru"
+    ],
     "roles": [
         1,
-        2,
-        3
+        2
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 574,
+    "dpm": 694.6089965397923,
+    "tdmg": 1136
 },
 {
     "id": 33,
@@ -375,10 +513,14 @@
     "localized_name": "Enigma",
     "primary_attr": "all",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
         3
     ],
-    "legs": 0
+    "legs": 0,
+    "gpm": 490,
+    "dpm": 670.8196721311475,
+    "tdmg": 1065
 },
 {
     "id": 34,
@@ -386,10 +528,14 @@
     "localized_name": "Tinker",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
         2
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 595,
+    "dpm": 934.7113594040968,
+    "tdmg": 85
 },
 {
     "id": 35,
@@ -397,11 +543,15 @@
     "localized_name": "Sniper",
     "primary_attr": "agi",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
         1,
         2
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 663,
+    "dpm": 915.5687973997833,
+    "tdmg": 3600
 },
 {
     "id": 36,
@@ -409,11 +559,16 @@
     "localized_name": "Necrophos",
     "primary_attr": "int",
     "attack_type": "Ranged",
-    "roles": [
-        2,
-        3
+    "aliases": [
+        "necrolyte"
     ],
-    "legs": 2
+    "roles": [
+        2
+    ],
+    "legs": 2,
+    "gpm": 614,
+    "dpm": 881.0362694300519,
+    "tdmg": 1267
 },
 {
     "id": 37,
@@ -421,11 +576,14 @@
     "localized_name": "Warlock",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
-        4,
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 456,
+    "dpm": 627.2638963842418,
+    "tdmg": 1933
 },
 {
     "id": 38,
@@ -433,10 +591,16 @@
     "localized_name": "Beastmaster",
     "primary_attr": "all",
     "attack_type": "Melee",
+    "aliases": [
+        "bm"
+    ],
     "roles": [
         3
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 542,
+    "dpm": 571.5940488841658,
+    "tdmg": 1392
 },
 {
     "id": 39,
@@ -444,10 +608,17 @@
     "localized_name": "Queen of Pain",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [
+        "qop",
+        "akasha"
+    ],
     "roles": [
         2
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 559,
+    "dpm": 762.5597532767925,
+    "tdmg": 1612
 },
 {
     "id": 40,
@@ -455,12 +626,15 @@
     "localized_name": "Venomancer",
     "primary_attr": "all",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
-        3,
         4,
         5
     ],
-    "legs": 0
+    "legs": 0,
+    "gpm": 433,
+    "dpm": 704.0236686390532,
+    "tdmg": 849
 },
 {
     "id": 41,
@@ -468,10 +642,16 @@
     "localized_name": "Faceless Void",
     "primary_attr": "agi",
     "attack_type": "Melee",
+    "aliases": [
+        "fv"
+    ],
     "roles": [
         1
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 632,
+    "dpm": 579.7616865261228,
+    "tdmg": 2412
 },
 {
     "id": 42,
@@ -479,11 +659,19 @@
     "localized_name": "Wraith King",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [
+        "wk",
+        "leorik",
+        "skeleton"
+    ],
     "roles": [
         1,
         3
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 634,
+    "dpm": 677.955334987593,
+    "tdmg": 4209
 },
 {
     "id": 43,
@@ -491,11 +679,19 @@
     "localized_name": "Death Prophet",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [
+        "dp",
+        "bahshee",
+        "krobelus"
+    ],
     "roles": [
         2,
         3
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 520,
+    "dpm": 683.5274975593883,
+    "tdmg": 2339
 },
 {
     "id": 44,
@@ -503,10 +699,17 @@
     "localized_name": "Phantom Assassin",
     "primary_attr": "agi",
     "attack_type": "Melee",
+    "aliases": [
+        "pa",
+        "mortred"
+    ],
     "roles": [
         1
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 671,
+    "dpm": 724.7903225806451,
+    "tdmg": 1470
 },
 {
     "id": 45,
@@ -514,12 +717,15 @@
     "localized_name": "Pugna",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
-        2,
         4,
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 426,
+    "dpm": 679.2110091743119,
+    "tdmg": 3382
 },
 {
     "id": 46,
@@ -527,11 +733,18 @@
     "localized_name": "Templar Assassin",
     "primary_attr": "agi",
     "attack_type": "Ranged",
+    "aliases": [
+        "ta",
+        "lanaya"
+    ],
     "roles": [
         1,
         2
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 645,
+    "dpm": 714.4862518089725,
+    "tdmg": 3750
 },
 {
     "id": 47,
@@ -539,11 +752,15 @@
     "localized_name": "Viper",
     "primary_attr": "agi",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
         2,
         3
     ],
-    "legs": 0
+    "legs": 0,
+    "gpm": 587,
+    "dpm": 751.7962466487936,
+    "tdmg": 2030
 },
 {
     "id": 48,
@@ -551,10 +768,14 @@
     "localized_name": "Luna",
     "primary_attr": "agi",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
         1
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 698,
+    "dpm": 717.4126191556967,
+    "tdmg": 6493
 },
 {
     "id": 49,
@@ -562,11 +783,17 @@
     "localized_name": "Dragon Knight",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [
+        "dk"
+    ],
     "roles": [
         2,
         3
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 578,
+    "dpm": 556.0200429491767,
+    "tdmg": 2402
 },
 {
     "id": 50,
@@ -574,13 +801,15 @@
     "localized_name": "Dazzle",
     "primary_attr": "all",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
         2,
-        3,
-        4,
-        5
+        3
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 428,
+    "dpm": 365.87248322147656,
+    "tdmg": 544
 },
 {
     "id": 51,
@@ -588,11 +817,15 @@
     "localized_name": "Clockwerk",
     "primary_attr": "all",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
         4,
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 428,
+    "dpm": 634.367088607595,
+    "tdmg": 353
 },
 {
     "id": 52,
@@ -600,10 +833,14 @@
     "localized_name": "Leshrac",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
         2
     ],
-    "legs": 4
+    "legs": 4,
+    "gpm": 579,
+    "dpm": 750.2861685214626,
+    "tdmg": 2384
 },
 {
     "id": 53,
@@ -611,12 +848,17 @@
     "localized_name": "Nature's Prophet",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [
+        "furion"
+    ],
     "roles": [
-        3,
         4,
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 571,
+    "dpm": 668.1036077705827,
+    "tdmg": 3386
 },
 {
     "id": 54,
@@ -624,10 +866,14 @@
     "localized_name": "Lifestealer",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
         1
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 617,
+    "dpm": 639.5822720326031,
+    "tdmg": 3506
 },
 {
     "id": 55,
@@ -635,10 +881,16 @@
     "localized_name": "Dark Seer",
     "primary_attr": "all",
     "attack_type": "Melee",
+    "aliases": [
+        "ds"
+    ],
     "roles": [
         3
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 542,
+    "dpm": 633.0979699911738,
+    "tdmg": 544
 },
 {
     "id": 56,
@@ -646,13 +898,17 @@
     "localized_name": "Clinkz",
     "primary_attr": "agi",
     "attack_type": "Ranged",
-    "roles": [
-        1,
-        2,
-        4,
-        5
+    "aliases": [
+        "bonefletcher"
     ],
-    "legs": 2
+    "roles": [
+        2,
+        4
+    ],
+    "legs": 2,
+    "gpm": 562,
+    "dpm": 761.441922563418,
+    "tdmg": 4206
 },
 {
     "id": 57,
@@ -660,10 +916,14 @@
     "localized_name": "Omniknight",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
         3
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 490,
+    "dpm": 508.57142857142856,
+    "tdmg": 934
 },
 {
     "id": 58,
@@ -671,11 +931,14 @@
     "localized_name": "Enchantress",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
-        4,
         5
     ],
-    "legs": 4
+    "legs": 4,
+    "gpm": 453,
+    "dpm": 560.2761982128351,
+    "tdmg": 1564
 },
 {
     "id": 59,
@@ -683,11 +946,14 @@
     "localized_name": "Huskar",
     "primary_attr": "str",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
-        2,
-        3
+        2
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 558,
+    "dpm": 803.4008097165992,
+    "tdmg": 2776
 },
 {
     "id": 60,
@@ -695,10 +961,17 @@
     "localized_name": "Night Stalker",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [
+        "ns",
+        "balanar"
+    ],
     "roles": [
         3
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 519,
+    "dpm": 524.9081257656187,
+    "tdmg": 2135
 },
 {
     "id": 61,
@@ -706,11 +979,17 @@
     "localized_name": "Broodmother",
     "primary_attr": "all",
     "attack_type": "Melee",
+    "aliases": [
+        "spider"
+    ],
     "roles": [
         2,
         3
     ],
-    "legs": 8
+    "legs": 8,
+    "gpm": 605,
+    "dpm": 522.709306503773,
+    "tdmg": 3387
 },
 {
     "id": 62,
@@ -718,12 +997,17 @@
     "localized_name": "Bounty Hunter",
     "primary_attr": "agi",
     "attack_type": "Melee",
+    "aliases": [
+        "bh"
+    ],
     "roles": [
-        3,
         4,
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 562,
+    "dpm": 551.9724770642202,
+    "tdmg": 500
 },
 {
     "id": 63,
@@ -731,11 +1015,15 @@
     "localized_name": "Weaver",
     "primary_attr": "agi",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
         1,
-        3
+        4
     ],
-    "legs": 4
+    "legs": 4,
+    "gpm": 626,
+    "dpm": 749.5300261096605,
+    "tdmg": 4254
 },
 {
     "id": 64,
@@ -743,11 +1031,16 @@
     "localized_name": "Jakiro",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [
+        "thd"
+    ],
     "roles": [
-        4,
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 415,
+    "dpm": 533.0512881115575,
+    "tdmg": 1966
 },
 {
     "id": 65,
@@ -755,13 +1048,15 @@
     "localized_name": "Batrider",
     "primary_attr": "all",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
         2,
-        3,
-        4,
-        5
+        4
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 495,
+    "dpm": 533.8983050847457,
+    "tdmg": 290
 },
 {
     "id": 66,
@@ -769,11 +1064,14 @@
     "localized_name": "Chen",
     "primary_attr": "all",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
-        4,
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 452,
+    "dpm": 313.3646616541353,
+    "tdmg": 1950
 },
 {
     "id": 67,
@@ -781,10 +1079,14 @@
     "localized_name": "Spectre",
     "primary_attr": "agi",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
         1
     ],
-    "legs": 0
+    "legs": 0,
+    "gpm": 639,
+    "dpm": 971.8040089086859,
+    "tdmg": 2778
 },
 {
     "id": 68,
@@ -792,11 +1094,16 @@
     "localized_name": "Ancient Apparition",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [
+        "aa"
+    ],
     "roles": [
-        4,
         5
     ],
-    "legs": 0
+    "legs": 0,
+    "gpm": 405,
+    "dpm": 512.4168126094571,
+    "tdmg": 375
 },
 {
     "id": 69,
@@ -804,11 +1111,14 @@
     "localized_name": "Doom",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
-        3,
-        4
+        3
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 585,
+    "dpm": 539.4542843465773,
+    "tdmg": 552
 },
 {
     "id": 70,
@@ -816,10 +1126,14 @@
     "localized_name": "Ursa",
     "primary_attr": "agi",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
         1
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 633,
+    "dpm": 757.394540942928,
+    "tdmg": 1747
 },
 {
     "id": 71,
@@ -827,12 +1141,18 @@
     "localized_name": "Spirit Breaker",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [
+        "sb",
+        "baratrum"
+    ],
     "roles": [
         3,
-        4,
-        5
+        4
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 548,
+    "dpm": 581.9452887537993,
+    "tdmg": 561
 },
 {
     "id": 72,
@@ -840,11 +1160,15 @@
     "localized_name": "Gyrocopter",
     "primary_attr": "agi",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
-        1,
-        4
+        4,
+        5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 474,
+    "dpm": 712.4857992967271,
+    "tdmg": 910
 },
 {
     "id": 73,
@@ -852,10 +1176,14 @@
     "localized_name": "Alchemist",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
         1
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 712,
+    "dpm": 589.4572810317035,
+    "tdmg": 1670
 },
 {
     "id": 74,
@@ -863,12 +1191,14 @@
     "localized_name": "Invoker",
     "primary_attr": "all",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
-        2,
-        4,
-        5
+        2
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 582,
+    "dpm": 679.7465034965035,
+    "tdmg": 1551
 },
 {
     "id": 75,
@@ -876,11 +1206,15 @@
     "localized_name": "Silencer",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
         4,
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 442,
+    "dpm": 548.2089552238806,
+    "tdmg": 1039
 },
 {
     "id": 76,
@@ -888,10 +1222,16 @@
     "localized_name": "Outworld Destroyer",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [
+        "od"
+    ],
     "roles": [
         2
     ],
-    "legs": 4
+    "legs": 4,
+    "gpm": 594,
+    "dpm": 825.1364764267989,
+    "tdmg": 2875
 },
 {
     "id": 77,
@@ -899,10 +1239,14 @@
     "localized_name": "Lycan",
     "primary_attr": "all",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
         3
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 592,
+    "dpm": 514.6736842105264,
+    "tdmg": 5363
 },
 {
     "id": 78,
@@ -910,10 +1254,14 @@
     "localized_name": "Brewmaster",
     "primary_attr": "all",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
         3
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 556,
+    "dpm": 575.6025758969641,
+    "tdmg": 2270
 },
 {
     "id": 79,
@@ -921,11 +1269,17 @@
     "localized_name": "Shadow Demon",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [
+        "sd"
+    ],
     "roles": [
         4,
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 390,
+    "dpm": 504.0342124019957,
+    "tdmg": 370
 },
 {
     "id": 80,
@@ -933,12 +1287,17 @@
     "localized_name": "Lone Druid",
     "primary_attr": "all",
     "attack_type": "Ranged",
+    "aliases": [
+        "ld"
+    ],
     "roles": [
-        1,
         2,
         3
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 589,
+    "dpm": 553.1184466019417,
+    "tdmg": 9208
 },
 {
     "id": 81,
@@ -946,11 +1305,17 @@
     "localized_name": "Chaos Knight",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [
+        "ck"
+    ],
     "roles": [
         1,
         3
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 580,
+    "dpm": 654.8969651554889,
+    "tdmg": 3513
 },
 {
     "id": 82,
@@ -958,10 +1323,15 @@
     "localized_name": "Meepo",
     "primary_attr": "agi",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
+        1,
         2
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 668,
+    "dpm": 645.9530227185213,
+    "tdmg": 4311
 },
 {
     "id": 83,
@@ -969,11 +1339,14 @@
     "localized_name": "Treant Protector",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
-        4,
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 364,
+    "dpm": 390.48523206751054,
+    "tdmg": 475
 },
 {
     "id": 84,
@@ -981,11 +1354,15 @@
     "localized_name": "Ogre Magi",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
         3,
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 532,
+    "dpm": 638.6409469530907,
+    "tdmg": 778
 },
 {
     "id": 85,
@@ -993,11 +1370,16 @@
     "localized_name": "Undying",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [
+        "zombie"
+    ],
     "roles": [
-        4,
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 426,
+    "dpm": 416.2711864406779,
+    "tdmg": 574
 },
 {
     "id": 86,
@@ -1005,11 +1387,14 @@
     "localized_name": "Rubick",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
-        4,
-        5
+        4
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 417,
+    "dpm": 510.9027291812456,
+    "tdmg": 262
 },
 {
     "id": 87,
@@ -1017,11 +1402,14 @@
     "localized_name": "Disruptor",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
-        4,
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 354,
+    "dpm": 369.68442834971546,
+    "tdmg": 207
 },
 {
     "id": 88,
@@ -1029,11 +1417,14 @@
     "localized_name": "Nyx Assassin",
     "primary_attr": "all",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
-        3,
         4
     ],
-    "legs": 6
+    "legs": 6,
+    "gpm": 446,
+    "dpm": 725.2146814404432,
+    "tdmg": 291
 },
 {
     "id": 89,
@@ -1041,10 +1432,14 @@
     "localized_name": "Naga Siren",
     "primary_attr": "agi",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
         1
     ],
-    "legs": 0
+    "legs": 0,
+    "gpm": 687,
+    "dpm": 544.3786488740617,
+    "tdmg": 4258
 },
 {
     "id": 90,
@@ -1052,13 +1447,17 @@
     "localized_name": "Keeper of the Light",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [
+        "kotl"
+    ],
     "roles": [
         2,
-        3,
-        4,
-        5
+        4
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 471,
+    "dpm": 526.4929304130857,
+    "tdmg": 352
 },
 {
     "id": 91,
@@ -1066,11 +1465,17 @@
     "localized_name": "Io",
     "primary_attr": "all",
     "attack_type": "Ranged",
+    "aliases": [
+        "wisp"
+    ],
     "roles": [
         4,
         5
     ],
-    "legs": 0
+    "legs": 0,
+    "gpm": 359,
+    "dpm": 185.5045871559633,
+    "tdmg": 759
 },
 {
     "id": 92,
@@ -1078,11 +1483,15 @@
     "localized_name": "Visage",
     "primary_attr": "all",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
         2,
         3
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 546,
+    "dpm": 559.7845898922949,
+    "tdmg": 4556
 },
 {
     "id": 93,
@@ -1090,10 +1499,14 @@
     "localized_name": "Slark",
     "primary_attr": "agi",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
         1
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 592,
+    "dpm": 584.0320427236315,
+    "tdmg": 2573
 },
 {
     "id": 94,
@@ -1101,10 +1514,14 @@
     "localized_name": "Medusa",
     "primary_attr": "agi",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
         1
     ],
-    "legs": 0
+    "legs": 0,
+    "gpm": 653,
+    "dpm": 678.2477341389728,
+    "tdmg": 2942
 },
 {
     "id": 95,
@@ -1112,10 +1529,14 @@
     "localized_name": "Troll Warlord",
     "primary_attr": "agi",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
         1
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 660,
+    "dpm": 734.0540540540541,
+    "tdmg": 5799
 },
 {
     "id": 96,
@@ -1123,10 +1544,14 @@
     "localized_name": "Centaur Warrunner",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
         3
     ],
-    "legs": 4
+    "legs": 4,
+    "gpm": 521,
+    "dpm": 616.2523719165085,
+    "tdmg": 1811
 },
 {
     "id": 97,
@@ -1134,10 +1559,15 @@
     "localized_name": "Magnus",
     "primary_attr": "all",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
+        2,
         3
     ],
-    "legs": 4
+    "legs": 4,
+    "gpm": 519,
+    "dpm": 459.6856106408706,
+    "tdmg": 725
 },
 {
     "id": 98,
@@ -1145,11 +1575,15 @@
     "localized_name": "Timbersaw",
     "primary_attr": "all",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
         2,
         3
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 546,
+    "dpm": 735.9984609465179,
+    "tdmg": 995
 },
 {
     "id": 99,
@@ -1157,11 +1591,14 @@
     "localized_name": "Bristleback",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
-        1,
         3
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 560,
+    "dpm": 884.4848484848485,
+    "tdmg": 1674
 },
 {
     "id": 100,
@@ -1169,13 +1606,15 @@
     "localized_name": "Tusk",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
-        2,
-        3,
         4,
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 432,
+    "dpm": 473.1751824817518,
+    "tdmg": 376
 },
 {
     "id": 101,
@@ -1183,11 +1622,14 @@
     "localized_name": "Skywrath Mage",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
-        4,
-        5
+        4
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 400,
+    "dpm": 638.5482123510293,
+    "tdmg": 345
 },
 {
     "id": 102,
@@ -1195,10 +1637,14 @@
     "localized_name": "Abaddon",
     "primary_attr": "all",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 462,
+    "dpm": 463.39145597210114,
+    "tdmg": 1550
 },
 {
     "id": 103,
@@ -1206,12 +1652,14 @@
     "localized_name": "Elder Titan",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
-        3,
-        4,
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 504,
+    "dpm": 579.7203947368421,
+    "tdmg": 842
 },
 {
     "id": 104,
@@ -1219,10 +1667,16 @@
     "localized_name": "Legion Commander",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [
+        "lc"
+    ],
     "roles": [
         3
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 551,
+    "dpm": 753.3357798165138,
+    "tdmg": 2103
 },
 {
     "id": 105,
@@ -1230,11 +1684,15 @@
     "localized_name": "Techies",
     "primary_attr": "all",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
         4,
         5
     ],
-    "legs": 6
+    "legs": 6,
+    "gpm": 462,
+    "dpm": 793.4933973589435,
+    "tdmg": 568
 },
 {
     "id": 106,
@@ -1242,10 +1700,14 @@
     "localized_name": "Ember Spirit",
     "primary_attr": "agi",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
         2
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 594,
+    "dpm": 803.5942028985507,
+    "tdmg": 1175
 },
 {
     "id": 107,
@@ -1253,12 +1715,17 @@
     "localized_name": "Earth Spirit",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [
+        "es"
+    ],
     "roles": [
         2,
-        3,
         4
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 473,
+    "dpm": 551.094674556213,
+    "tdmg": 356
 },
 {
     "id": 108,
@@ -1266,10 +1733,14 @@
     "localized_name": "Underlord",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
         3
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 502,
+    "dpm": 616.1393489434608,
+    "tdmg": 1492
 },
 {
     "id": 109,
@@ -1277,10 +1748,16 @@
     "localized_name": "Terrorblade",
     "primary_attr": "agi",
     "attack_type": "Melee",
+    "aliases": [
+        "tb"
+    ],
     "roles": [
         1
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 653,
+    "dpm": 632.2502826988315,
+    "tdmg": 3757
 },
 {
     "id": 110,
@@ -1288,12 +1765,15 @@
     "localized_name": "Phoenix",
     "primary_attr": "all",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
-        3,
         4,
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 421,
+    "dpm": 561.614426792615,
+    "tdmg": 537
 },
 {
     "id": 111,
@@ -1301,11 +1781,14 @@
     "localized_name": "Oracle",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
-        4,
         5
     ],
-    "legs": 0
+    "legs": 0,
+    "gpm": 366,
+    "dpm": 327.1175373134328,
+    "tdmg": 260
 },
 {
     "id": 112,
@@ -1313,11 +1796,17 @@
     "localized_name": "Winter Wyvern",
     "primary_attr": "all",
     "attack_type": "Ranged",
+    "aliases": [
+        "ww"
+    ],
     "roles": [
         4,
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 418,
+    "dpm": 478.8679245283019,
+    "tdmg": 452
 },
 {
     "id": 113,
@@ -1325,10 +1814,14 @@
     "localized_name": "Arc Warden",
     "primary_attr": "agi",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
         2
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 747,
+    "dpm": 933.8650306748466,
+    "tdmg": 3933
 },
 {
     "id": 114,
@@ -1336,13 +1829,16 @@
     "localized_name": "Monkey King",
     "primary_attr": "agi",
     "attack_type": "Melee",
-    "roles": [
-        1,
-        2,
-        3,
-        4
+    "aliases": [
+        "mk"
     ],
-    "legs": 2
+    "roles": [
+        1
+    ],
+    "legs": 2,
+    "gpm": 589,
+    "dpm": 705.9426229508197,
+    "tdmg": 1912
 },
 {
     "id": 119,
@@ -1350,11 +1846,14 @@
     "localized_name": "Dark Willow",
     "primary_attr": "all",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
-        4,
-        5
+        4
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 458,
+    "dpm": 562.0359712230216,
+    "tdmg": 936
 },
 {
     "id": 120,
@@ -1362,11 +1861,14 @@
     "localized_name": "Pangolier",
     "primary_attr": "all",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
-        2,
-        3
+        2
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 560,
+    "dpm": 625.0873628606258,
+    "tdmg": 938
 },
 {
     "id": 121,
@@ -1374,11 +1876,15 @@
     "localized_name": "Grimstroke",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
         4,
         5
     ],
-    "legs": 0
+    "legs": 0,
+    "gpm": 370,
+    "dpm": 388.58369098712444,
+    "tdmg": 330
 },
 {
     "id": 123,
@@ -1386,11 +1892,14 @@
     "localized_name": "Hoodwink",
     "primary_attr": "agi",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
-        4,
-        5
+        4
     ],
-    "legs": 4
+    "legs": 4,
+    "gpm": 488,
+    "dpm": 604.3745819397993,
+    "tdmg": 800
 },
 {
     "id": 126,
@@ -1398,11 +1907,14 @@
     "localized_name": "Void Spirit",
     "primary_attr": "all",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
-        2,
-        3
+        2
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 587,
+    "dpm": 707.2095150960658,
+    "tdmg": 1763
 },
 {
     "id": 128,
@@ -1410,13 +1922,16 @@
     "localized_name": "Snapfire",
     "primary_attr": "all",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
-        2,
         3,
         4,
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 463,
+    "dpm": 554.5505226480836,
+    "tdmg": 1045
 },
 {
     "id": 129,
@@ -1424,11 +1939,14 @@
     "localized_name": "Mars",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
-        2,
         3
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 505,
+    "dpm": 549.5676318921063,
+    "tdmg": 884
 },
 {
     "id": 135,
@@ -1436,12 +1954,16 @@
     "localized_name": "Dawnbreaker",
     "primary_attr": "str",
     "attack_type": "Melee",
-    "roles": [
-        3,
-        4,
-        5
+    "aliases": [
+        "db"
     ],
-    "legs": 2
+    "roles": [
+        3
+    ],
+    "legs": 2,
+    "gpm": 523,
+    "dpm": 618.095963442498,
+    "tdmg": 1215
 },
 {
     "id": 136,
@@ -1449,12 +1971,16 @@
     "localized_name": "Marci",
     "primary_attr": "all",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
         3,
         4,
         5
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 479,
+    "dpm": 478.68769074262457,
+    "tdmg": 1335
 },
 {
     "id": 137,
@@ -1462,12 +1988,15 @@
     "localized_name": "Primal Beast",
     "primary_attr": "str",
     "attack_type": "Melee",
+    "aliases": [],
     "roles": [
         2,
-        3,
-        4
+        3
     ],
-    "legs": 2
+    "legs": 2,
+    "gpm": 515,
+    "dpm": 705.9840954274354,
+    "tdmg": 998
 },
 {
     "id": 138,
@@ -1475,11 +2004,13 @@
     "localized_name": "Muerta",
     "primary_attr": "int",
     "attack_type": "Ranged",
+    "aliases": [],
     "roles": [
         1,
-        4,
-        5
+        4
     ],
-    "legs": 2
-}
-]
+    "legs": 2,
+    "gpm": 634,
+    "dpm": 802.8051001821494,
+    "tdmg": 3341
+}]
